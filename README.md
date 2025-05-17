@@ -38,62 +38,20 @@ Install it using pip:
 Make sure your MySQL database (csproject) includes the following tables:
 
 customer table
-sql
-Copy
-Edit
-CREATE TABLE customer (
-  cust_id INT PRIMARY KEY,
-  name VARCHAR(100),
-  phone BIGINT,
-  payment INT,
-  stat VARCHAR(50),
-  email VARCHAR(100),
-  orderid VARCHAR(50),
-  date DATE
-);
+![image](https://github.com/user-attachments/assets/eb3e12f4-0cfd-4ad7-bca3-e1c8ddcf2b9d)
+
 employee table
-sql
-Copy
-Edit
-CREATE TABLE employee (
-  emp_id INT PRIMARY KEY,
-  name VARCHAR(100),
-  emp_g VARCHAR(10),
-  age INT,
-  emp_phone BIGINT,
-  pwd VARCHAR(50)
-);
+![image](https://github.com/user-attachments/assets/7cbb09f8-e59c-4375-b506-b7ba35e91647)
+
 food table
-sql
-Copy
-Edit
-CREATE TABLE food (
-  food_id INT PRIMARY KEY,
-  foodname VARCHAR(100),
-  food_size VARCHAR(20),
-  prize INT
-);
+![image](https://github.com/user-attachments/assets/2bb993b2-7aa0-4363-a12c-8b48c9eac30a)
+
 orderfood table
-sql
-Copy
-Edit
-CREATE TABLE orderfood (
-  order_id INT PRIMARY KEY,
-  cust_id INT,
-  emp_id INT,
-  food_id INT,
-  food_qty INT,
-  total_price INT
-);
+![image](https://github.com/user-attachments/assets/9d308f3b-849f-4443-b4d0-83276b662774)
+
 fee table
-sql
-Copy
-Edit
-CREATE TABLE fee (
-  roll INT,
-  feedeposit INT,
-  month VARCHAR(20)
-);
+![image](https://github.com/user-attachments/assets/f022eeef-0d8b-4698-be40-908a94ac4390)
+
 💡 Modify table structures as needed to suit your requirements.
 
 💡 How to Use
@@ -101,21 +59,12 @@ Clone the repository or download the Python file.
 
 Update the database credentials in the script:
 
-python
-Copy
-Edit
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="12345",
-    database="csproject"
-)
+![image](https://github.com/user-attachments/assets/c183364c-43ce-4458-8c21-9d589d0c3555)
+
 Run the script:
 
-bash
-Copy
-Edit
-python food_ordering_system.py
+![image](https://github.com/user-attachments/assets/a9bcc148-9ef0-484d-9b4b-e601a5b93a60)
+
 Follow the on-screen prompts to perform different operations.
 
 📋 Menu Options
@@ -139,16 +88,12 @@ This script uses direct input() calls and lacks validations—handle with cautio
 The View function has a bug in Employee SQL query:
 Change
 
-sql
-Copy
-Edit
-sql="select  from Employee where Emp_id=%s"
+![image](https://github.com/user-attachments/assets/a2c8aedf-facf-4101-ab1f-f21ec8e705bb)
+
 to
 
-sql
-Copy
-Edit
-sql="select * from Employee where Emp_id=%s"
+![image](https://github.com/user-attachments/assets/60289cf4-9b72-4369-b4b8-540de4db7fac)
+
 📌 To-Do / Improvements
 Add validation for user inputs
 
