@@ -32,10 +32,8 @@ MySQL installed and running
 mysql-connector-python installed
 Install it using pip:
 
-bash
-Copy
-Edit
-pip install mysql-connector-python
+![image](https://github.com/user-attachments/assets/9c3c8a00-97c7-40e4-8c64-0c53e1396d3e)
+
 2. Database Configuration
 Make sure your MySQL database (csproject) includes the following tables:
 
