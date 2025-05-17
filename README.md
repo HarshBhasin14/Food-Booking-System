@@ -104,6 +104,3 @@ Add login authentication
 Enhance error handling
 
 Add GUI (Tkinter or PyQt) for better user experience
-
-📄 License
-This project is free to use and modify for educational purposes.
